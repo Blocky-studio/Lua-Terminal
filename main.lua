@@ -1,5 +1,5 @@
 home = [[
-  local Calculator = assert(loadfile("Calculator.lua"))
+  local Calculator = assert(loadfile("cal.lua"))
 io.write("Terminal is starting up --- done!\n")
 io.write("Making sure everything works --- Done!\n")
 cmd = io.read()
@@ -16,7 +16,7 @@ if cmd == "cal"then
 home = loadstring(home)
 
 
-local Calculator = assert(loadfile("Calculator.lua"))
+local Calculator = assert(loadfile("cal.lua"))
 io.write("Terminal is starting up --- done!\n")
 io.write("Making sure everything works --- Done!\n")
 cmd = io.read()
