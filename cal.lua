@@ -1,7 +1,8 @@
 
 local add = assert(loadfile("add.lua"))
-
-
+local subt = assert(loadfile("subt.lua"))
+local mul = assert(loadfile("mul.lua"))
+local div = assert(loadfile("div.lua"))
 
 
 
@@ -16,6 +17,10 @@ local add = assert(loadfile("add.lua"))
         
         end
         
+    if op == "-"then
+        subt()
+    
+        
     if op == "+"then
         io.write("whats the first number?\n")
         ADD1 = io.read()
@@ -26,10 +31,26 @@ local add = assert(loadfile("add.lua"))
         io.write(AE)
         io.write(" \n")
         OPT = io.read()
+        
+    if op == "*"then
+        mul()
+    
+    if op == "/"then
+       div()
+        
+        --after calc is complete--
         if OPT == "exit" then 
         dofile("main.lua")
         elseif OPT == "+" then
         add()
-
+        elseif OPT == "-" then
+            subt()
+        elseif OPT == "*" then 
+            mul()
+        elseif OPT == "/" then
+            div()
+        end
+        end
+        end    
         end
         end

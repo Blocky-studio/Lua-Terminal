@@ -6,9 +6,5 @@
         AE = ADD1+ADD2
         io.write(AE)
         io.write(" \n")
-        OPT = io.read()
-        if OPT == "exit" then 
-        dofile("main.lua")
-        end
         
         
