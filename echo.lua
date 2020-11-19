@@ -1,0 +1,5 @@
+io.write("what you want to say\n")
+    text = io.read()
+    io.write(text)
+    io.write("\n")
+dofile("main.lua")
