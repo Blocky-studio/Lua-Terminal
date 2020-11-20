@@ -1,11 +1,6 @@
 home = [[
 home = loadstring(home)
-
 --functions--
-local echo = assert(loadfile("echo.lua"))
-local dwnld = assert(loadfile("dwnld.lua"))
-local Help = assert(loadfile("help.lua"))
-local About = assert(loadfile("about.lua"))
 io.write("Terminal is starting up --- done!\n")
 io.write("Making sure everything works --- Done!\n")
 cmd = io.read()
@@ -20,17 +15,16 @@ if cmd == "" then
     dofile("mul.lua")
     elseif cmd == "calc+"then
     dofile("add.lua")
-
     elseif cmd == "calc-"then
     dofile("subt.lua")
     elseif cmd == "about"then
-    About()
+    dofile("about.lua")
     elseif cmd == "help"then
-    Help()
+    dofile("help.lua")
     elseif cmd == "dwnld"then
-    dwnld()
+    dofile("dwnld.lua")
     elseif cmd == "echo" then
-    echo()
+    dofile("echo.lua")
     else
     io.write("Please type a vaild command\n")
     home()
@@ -41,10 +35,6 @@ if cmd == "" then
 home = loadstring(home)
 
 --functions--
-local echo = assert(loadfile("echo.lua"))
-local dwnld = assert(loadfile("dwnld.lua"))
-local Help = assert(loadfile("help.lua"))
-local About = assert(loadfile("about.lua"))
 io.write("Terminal is starting up --- done!\n")
 io.write("Making sure everything works --- Done!\n")
 cmd = io.read()
@@ -59,17 +49,16 @@ if cmd == "" then
     dofile("mul.lua")
     elseif cmd == "calc+"then
     dofile("add.lua")
-
     elseif cmd == "calc-"then
     dofile("subt.lua")
     elseif cmd == "about"then
-    About()
+    dofile("about.lua")
     elseif cmd == "help"then
-    Help()
+    dofile("help.lua")
     elseif cmd == "dwnld"then
-    dwnld()
+    dofile("dwnld.lua")
     elseif cmd == "echo" then
-    echo()
+    dofile("echo.lua")
     else
     io.write("Please type a vaild command\n")
     home()
