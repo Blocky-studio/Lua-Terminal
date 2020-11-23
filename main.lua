@@ -30,6 +30,10 @@ if cmd == "" then
     io.write(os.date("today is %m/%d/%Y"))
     elseif cmd == "CMD" then 
     dofile("CMD.lua")
+    elseif cmd == "cmd" then
+    dofile("CMD.lua")
+    elseif cmd == "exe" then
+    dofile("exe.lua")
     else
     io.write("Please type a vaild command\n")
     home()
@@ -64,12 +68,14 @@ if cmd == "" then
     dofile("dwnld.lua")
     elseif cmd == "echo" then
     dofile("echo.lua")
-    elseif cmd == "cal" then
+    elseif cmd == "date" then
     io.write(os.date("today is %m/%d/%Y"))
     elseif cmd == "CMD" then 
     dofile("CMD.lua")
     elseif cmd == "cmd" then
     dofile("CMD.lua")
+    elseif cmd == "exe" then
+    dofile("exe.lua")
     else
     io.write("Please type a vaild command\n")
     home()

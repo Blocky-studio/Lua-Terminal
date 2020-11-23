@@ -1,5 +1,5 @@
-io.write("lua terminal app download")
-io.write("copy and paste the link of witch to download the git hub respository")
+io.write("lua terminal app download\n")
+io.write("copy and paste the link of witch to download the git hub respository\n")
 LINK = io.read()
 local http = require("socket.http")
 local body, code = http.request(LINK)
