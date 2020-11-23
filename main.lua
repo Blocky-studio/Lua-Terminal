@@ -8,31 +8,31 @@ if cmd == "" then
     io.write("Please type a command\n") 
     dofile("main.lua")
     elseif cmd == "calc/"then
-    dofile("Functions/div.lua")
+    dofile("Functions/calc/div.lua")
     elseif cmd == "calc*"then
-    dofile("Functions/mul.lua")
+    dofile("Functions/calc/mul.lua")
     elseif cmd == "calc+"then
-    dofile("Functions/add.lua")
+    dofile("Functions/calc/add.lua")
     elseif cmd == "calc-"then
-    dofile("Functions/subt.lua")
+    dofile("Functions/calc/subt.lua")
     elseif cmd == "about"then
-    dofile("Functions/about.lua")
+    dofile("Functions/main/about.lua")
     elseif cmd == "help"then
-    dofile("Functions/help.lua")
+    dofile("Functions/main/help.lua")
     elseif cmd == "dwnld"then
-    dofile("Functions/dwnld.lua")
+    dofile("Functions/main/dwnld.lua")
     elseif cmd == "echo" then
-    dofile("Functions/echo.lua")
+    dofile("Functions/main/echo.lua")
     elseif cmd == "date" then
     io.write(os.date("today is %m/%d/%Y"))
     elseif cmd == "CMD" then 
-    dofile("Functions/CMD.lua")
+    dofile("Functions/main/CMD.lua")
     elseif cmd == "cmd" then
-    dofile("Functions/CMD.lua")
+    dofile("Functions/main/CMD.lua")
     elseif cmd == "exe" then
-    dofile("Functions/exe.lua")
+    dofile("Functions/main/exe.lua")
     elseif cmd == "open"then
-    dofile("Functions/open.lua")
+    dofile("Functions/main/open.lua")
     else
     io.write("Please type a vaild command\n")
     dofile("main.lua")
