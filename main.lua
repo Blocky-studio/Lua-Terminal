@@ -33,6 +33,8 @@ if cmd == "" then
     dofile("Functions/main/exe.lua")
     elseif cmd == "open"then
     dofile("Functions/main/open.lua")
+    elseif cmd == "del"then
+    dofile("Functions/main/del.lua")
     else
     io.write("Please type a vaild command\n")
     dofile("main.lua")
