@@ -1,6 +1,3 @@
-home = [[
-home = loadstring(home)
-
 --functions--
 io.write("Terminal is starting up --- done!\n")
 io.write("Making sure everything works --- Done!\n")
@@ -9,75 +6,35 @@ io.write(">")
 --checks what the user typed--
 if cmd == "" then 
     io.write("Please type a command\n") 
-    home()
+    dofile("main.lua")
     elseif cmd == "calc/"then
-    dofile("div.lua")
+    dofile("Functions/div.lua")
     elseif cmd == "calc*"then
-    dofile("mul.lua")
+    dofile("Functions/mul.lua")
     elseif cmd == "calc+"then
-    dofile("add.lua")
+    dofile("Functions/add.lua")
     elseif cmd == "calc-"then
-    dofile("subt.lua")
+    dofile("Functions/subt.lua")
     elseif cmd == "about"then
-    dofile("about.lua")
+    dofile("Functions/about.lua")
     elseif cmd == "help"then
-    dofile("help.lua")
+    dofile("Functions/help.lua")
     elseif cmd == "dwnld"then
-    dofile("dwnld.lua")
+    dofile("Functions/dwnld.lua")
     elseif cmd == "echo" then
-    dofile("echo.lua")
-    elseif cmd == "cal" then
-    io.write(os.date("today is %m/%d/%Y"))
-    elseif cmd == "CMD" then 
-    dofile("CMD.lua")
-    elseif cmd == "cmd" then
-    dofile("CMD.lua")
-    elseif cmd == "exe" then
-    dofile("exe.lua")
-    else
-    io.write("Please type a vaild command\n")
-    home()
-
-    end
-]]
-
-home = loadstring(home)
-
---functions--
-io.write("Terminal is starting up --- done!\n")
-io.write("Making sure everything works --- Done!\n")
-cmd = io.read()
-io.write(">")
---checks what the user typed--
-if cmd == "" then 
-    io.write("Please type a command\n") 
-    home()
-    elseif cmd == "calc/"then
-    dofile("div.lua")
-    elseif cmd == "calc*"then
-    dofile("mul.lua")
-    elseif cmd == "calc+"then
-    dofile("add.lua")
-    elseif cmd == "calc-"then
-    dofile("subt.lua")
-    elseif cmd == "about"then
-    dofile("about.lua")
-    elseif cmd == "help"then
-    dofile("help.lua")
-    elseif cmd == "dwnld"then
-    dofile("dwnld.lua")
-    elseif cmd == "echo" then
-    dofile("echo.lua")
+    dofile("Functions/echo.lua")
     elseif cmd == "date" then
     io.write(os.date("today is %m/%d/%Y"))
     elseif cmd == "CMD" then 
-    dofile("CMD.lua")
+    dofile("Functions/CMD.lua")
     elseif cmd == "cmd" then
-    dofile("CMD.lua")
+    dofile("Functions/CMD.lua")
     elseif cmd == "exe" then
-    dofile("exe.lua")
+    dofile("Functions/exe.lua")
+    elseif cmd == "open"then
+    dofile("Functions/open.lua")
     else
     io.write("Please type a vaild command\n")
-    home()
+    dofile("main.lua")
 
     end
