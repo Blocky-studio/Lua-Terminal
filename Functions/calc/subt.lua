@@ -7,10 +7,11 @@ io.write("whats the first number?\n")
         SE = SUB1-SUB2
         io.write(SE)
         io.write(" \n")
+        io.write("type exit to go back to calc or type - to subtract again\n")
         OPT = io.read()
         if OPT == "exit" then 
-        dofile("main.lua")
+        dofile("Functions/calc/calc.lua")
         elseif OPT == "-"then
-        dofile("subt.lua")
+        dofile("Functions/calc/subt.lua")
         end
     

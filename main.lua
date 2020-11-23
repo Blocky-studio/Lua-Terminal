@@ -7,14 +7,8 @@ io.write(">")
 if cmd == "" then 
     io.write("Please type a command\n") 
     dofile("main.lua")
-    elseif cmd == "calc/"then
-    dofile("Functions/calc/div.lua")
-    elseif cmd == "calc*"then
-    dofile("Functions/calc/mul.lua")
-    elseif cmd == "calc+"then
-    dofile("Functions/calc/add.lua")
-    elseif cmd == "calc-"then
-    dofile("Functions/calc/subt.lua")
+    elseif cmd == "calc"then
+    dofile("Functions/calc/calc.lua")
     elseif cmd == "about"then
     dofile("Functions/main/about.lua")
     elseif cmd == "help"then

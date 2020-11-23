@@ -7,9 +7,10 @@ io.write("whats the first number?\n")
         DE = DIV1*DIV2
         io.write(DE)
         io.write(" \n")
+        io.write("type exit to go back to calc or type / to divide again\n")
         OPT = io.read()
         if OPT == "exit" then 
-        dofile("main.lua")
+        dofile("Functions/calc/calc.lua")
         elseif OPT == "/"then
-        dofile("div.lua")
+        dofile("Functions/calc/div.lua")
         end

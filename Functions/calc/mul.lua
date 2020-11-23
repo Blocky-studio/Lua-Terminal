@@ -7,7 +7,10 @@ io.write("whats the first number?\n")
         ME = MUL1*MUL2
         io.write(ME)
         io.write(" \n") 
-        dofile("main.lua")
+        io.write("type exit to go back to calc or type * to multipy again\n")
+        OPT = io.read()
+        if OPT == "exit"then
+        dofile("Functions/calc/calc.lua")
         elseif OPT == "*"then
-        dofile("mul.lua")
+        dofile("Functions/calc/mul.lua")
         end

@@ -7,11 +7,10 @@ io.write("whats the first number?\n")
         AE = ADD1+ADD2
         io.write(AE)
         io.write(" \n")
+        io.write("type exit to go back to calc or type + to add again\n")
         OPT = io.read()
         if OPT == "exit" then
-        dofile("main.lua")
-        elseif OPT == "+"then
-        dofile("add.lua")
-        elseif OPT == "-"then
-        dofile("subt.lua")
-        end
+        dofile("Functions/calc/calc.lua")
+       elseif OPT == "+" then
+       dofile("Functions/calc/add.lua")
+       end
