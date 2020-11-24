@@ -29,8 +29,14 @@ if cmd == "" then
     dofile("Functions/main/open.lua")
     elseif cmd == "del"then
     dofile("Functions/main/del.lua")
-    elseif cmd == "users"then
-    dofile("Functions/userprogs/user.lua")
+    elseif cmd == "cal"then
+    dofile("Functions/main/userprogs/cal.lua")
+    elseif cmd == "LT"then
+    dofile("Functions/main/userprogs/AA/AA.lua")
+    elseif cmd == "GDT"then
+    dofile("Functions/main/userprogs/GTC/GTC.lua")
+    elseif cmd == "memclr"then
+    dofile("Functions/HW/memclr/memclr.lua")
     else
     io.write("Please type a vaild command\n")
     dofile("main.lua")
