@@ -29,6 +29,8 @@ if cmd == "" then
     dofile("Functions/main/open.lua")
     elseif cmd == "del"then
     dofile("Functions/main/del.lua")
+    elseif cmd == "users"then
+    dofile("Functions/userprogs/user.lua")
     else
     io.write("Please type a vaild command\n")
     dofile("main.lua")
