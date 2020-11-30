@@ -37,6 +37,8 @@ if cmd == "" then
     dofile("Functions/main/userprogs/GTC/GTC.lua")
     elseif cmd == "memclr"then
     dofile("Functions/HW/memclr/memclr.lua")
+    elseif cmd == "shutdown"then
+    dofile("Functions/HW/shutdown/opsd.lua")
     else
     io.write("Please type a vaild command\n")
     dofile("main.lua")

@@ -1,0 +1,2 @@
+@echo OFF
+SHUTDOWN /l
