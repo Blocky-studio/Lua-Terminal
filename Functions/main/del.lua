@@ -57,10 +57,25 @@ io.write("can not delete a system file!\n")
 dofile("Functions/main/del.lua")
 
 --checks to see if the user typed a directory for the HW folder--
-elseif PATH == "Functions/HW/memclr.lua"then
+elseif PATH == "Functions/HW/memclr/memclr.lua"then
 io.write("can not delete a system file!\n")
 dofile("Functions/main/del.lua")
 elseif PATH == "memclr.lua"then
+io.write("can not delete a system file!\n")
+dofile("Functions/main/del.lua")
+elseif PATH == "Functions/HW/shutdown/opsd.lua"then
+io.write("can not delete a system file!\n")
+dofile("Functions/main/del.lua")
+elseif PATH == "Functions/HW/shutdown/logoff.bat"then
+io.write("can not delete a system file!\n")
+dofile("Functions/main/del.lua")
+elseif PATH == "Functions/HW/shutdown/shutdown.bat"then
+io.write("can not delete a system file!\n")
+dofile("Functions/main/del.lua")
+elseif PATH == "Functions/HW/shutdown/restart.bat"then
+io.write("can not delete a system file!\n")
+dofile("Functions/main/del.lua")
+elseif PATH == "Functions/HW/shutdown/hibernate.bat"then
 io.write("can not delete a system file!\n")
 dofile("Functions/main/del.lua")
 --checks to see if the user typed a file for the calc folder--
@@ -71,7 +86,7 @@ elseif PATH == "subt.lua"then
 io.write("can not delete a system file!\n")
 dofile("Functions/main/del.lua")
 elseif PATH == "div.lua"then
-io.write("can not delete a system file!\n")
+io.write("can not delete system file!\n")
 dofile("Functions/main/del.lua")
 elseif PATH == "mul.lua"then
 io.write("can not delete a system file!\n")
@@ -90,8 +105,33 @@ dofile("Functions/main/del.lua")
 elseif PATH == "Functions/calc/mul.lua"then
 io.write("can not delete a system file!\n")
 dofile("Functions/main/del.lua")
+elseif PATH == "Functions/calc/calc.lua"then
+io.write("can not delete a system file!\n")
+dofile("Functions/main/del.lua")
+elseif PATH == "Functions/calc/calchelp.lua"then
+io.write("can not delete a system file!\n")
+dofile("Functions/main/del.lua")
+elseif PATH == "Functions/calc/pi.lua"then
+io.write("can not delete a system file!\n")
+dofile("Functions/main/del.lua")
 --checks to see if the person typed the main.lua file--
 elseif PATH == "main.lua"then
+io.write("can not delete a system file!\n")
+dofile("Functions/main/del.lua")
+--checks to see if the person typed a userprogs directory--
+elseif PATH == "Functions/main/userprogs/AA/AA.lua"then
+io.write("can not delete a system file!\n")
+dofile("Functions/main/del.lua")
+elseif PATH == "Functions/main/userprogs/AA/AAB.lua"then
+io.write("can not delete a system file!\n")
+dofile("Functions/main/del.lua")
+elseif PATH == "Functions/main/userprogs/GTC/GTC.lua"then
+io.write("can not delete a system file!\n")
+dofile("Functions/main/del.lua")
+elseif PATH == "Functions/main/userprogs/programs"then
+io.write("can not delete a system file!\n")
+dofile("Functions/main/del.lua")
+elseif PATH == "Functions/main/userprogs"then
 io.write("can not delete a system file!\n")
 dofile("Functions/main/del.lua")
 else

@@ -3,7 +3,7 @@ io.write("1 = Logoff\n")
 io.write("2 = Reboot\n")
 io.write("3 = Hibernate\n")
 io.write("4 = Shutdown\n")
-io.write("5 = \n")
+io.write("5 = exit\n")
 
 option = io.read()
 if option == "1"then

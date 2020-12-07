@@ -15,4 +15,6 @@ dofile("Functions/main/about.lua")
 elseif AWS == "open CMD"then
 io.write("opening CMD\n")
 dofile("Functions/main/CMD.lua")
+elseif AWS == "shutdown" then
+dofile("Functions/HW/shutdown/opsd.lua")
 end

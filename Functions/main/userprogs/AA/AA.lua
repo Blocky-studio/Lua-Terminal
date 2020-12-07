@@ -28,7 +28,31 @@ aws = io.read()
 if aws == "good"then
 io.write("Awesome!\n")
 dofile("Functions/main/userprogs/AA/AAB.lua")
-else 
+elseif aws == "bad"then
+bM = math.random(0,3)
+if bM == 1 then
+io.write("What got you down?\n")
+aw = io.read()
+if aw == ""then
+io.write("I hope that you feel better\n")
+else
+io.write("I hope that you feel better\n")
+dofile("Functions/main/userprogs/AA/AAB.lua")
+end
+end
+end
+
+if bM == 2 then
+io.write("you ok")
+aw2 = io.read()
+if aw2 == ""then
+io.write("")
+dofile("Functions/main/userprogs/AA/AAB.lua")
+elseif aw2 == "yea"then
+io.write("")
+dofile("Functions/main/userprogs/AA/AAB.lua")
+else
 io.write("ok what can i help you with\n")
 dofile("Functions/main/userprogs/AA/AAB.lua")
+end
 end

@@ -6,8 +6,14 @@ io.write(" 8     9     10    11     12    13   14\n")
 io.write(" 15    16    17    18     19    20   21\n")
 io.write(" 22    23    24    25     26    27   28\n")
 io.write(" 29    30    31\n")
-io.write("type exit to exit")
+io.write("type exit to exit\n")
+
 cexit = io.read()
 if cexit == "exit"then
 dofile("main.lua")
+elseif cexi == "date"then
+dofile("Functions/main/userprogs/cal.lua")
+else
+io.write("type a vaild command!")
+dofile("Functions/main/userprogs/cal.lua")
 end

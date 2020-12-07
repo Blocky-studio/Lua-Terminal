@@ -31,7 +31,7 @@ if cmd == "" then
     dofile("Functions/main/del.lua")
     elseif cmd == "cal"then
     dofile("Functions/main/userprogs/cal.lua")
-    elseif cmd == "LT"then
+    elseif cmd == "hey lua"then
     dofile("Functions/main/userprogs/AA/AA.lua")
     elseif cmd == "GDT"then
     dofile("Functions/main/userprogs/GTC/GTC.lua")
@@ -39,6 +39,15 @@ if cmd == "" then
     dofile("Functions/HW/memclr/memclr.lua")
     elseif cmd == "shutdown"then
     dofile("Functions/HW/shutdown/opsd.lua")
+    elseif cmd == "Hey lua"then
+    dofile("Functions/main/userprogs/AA/AA.lua")
+    elseif cmd == "hey Lua"then
+    dofile("Functions/main/userprogs/AA/AA.lua")
+    elseif cmd == "Hey Lua"then
+    dofile("Functions/main/userprogs/AA/AA.lua")
+    elseif cmd == "ping"then
+    dofile("Functions/HW/ping/ping.lua")
+    
     else
     io.write("Please type a vaild command\n")
     dofile("main.lua")
