@@ -8,46 +8,55 @@ if cmd == "" then
     io.write("Please type a command\n") 
     dofile("main.lua")
     elseif cmd == "calc"then
-    dofile("Functions/calc/calc.lua")
+    dofile("lualib/Functions/calc/calc.lua")
     elseif cmd == "about"then
-    dofile("Functions/main/about.lua")
+    dofile("lualib/Functions/main/about.lua")
     elseif cmd == "help"then
-    dofile("Functions/main/help.lua")
+    dofile("lualib/Functions/main/help.lua")
     elseif cmd == "dwnld"then
-    dofile("Functions/main/dwnld.lua")
+    dofile("lualib/Functions/main/dwnld.lua")
     elseif cmd == "echo" then
-    dofile("Functions/main/echo.lua")
+    dofile("lualib/Functions/main/echo.lua")
     elseif cmd == "date" then
     io.write(os.date("today is %m/%d/%Y"))
     elseif cmd == "CMD" then 
-    dofile("Functions/main/CMD.lua")
+    dofile("lualib/Functions/main/CMD.lua")
     elseif cmd == "cmd" then
-    dofile("Functions/main/CMD.lua")
+    dofile("lualib/Functions/main/CMD.lua")
     elseif cmd == "exe" then
-    dofile("Functions/main/exe.lua")
+    dofile("lualib/Functions/main/exe.lua")
     elseif cmd == "open"then
-    dofile("Functions/main/open.lua")
+    dofile("lualib/Functions/main/open.lua")
     elseif cmd == "del"then
-    dofile("Functions/main/del.lua")
+    dofile("lualib/Functions/FS/del.lua")
     elseif cmd == "cal"then
-    dofile("Functions/main/userprogs/cal.lua")
+    dofile("lualib/Functions/main/userprogs/cal.lua")
     elseif cmd == "hey lua"then
-    dofile("Functions/main/userprogs/AA/AA.lua")
+    dofile("lualib/Functions/main/userprogs/AA/AA.lua")
     elseif cmd == "GDT"then
-    dofile("Functions/main/userprogs/GTC/GTC.lua")
+    dofile("lualib/Functions/main/userprogs/GTC/GTC.lua")
     elseif cmd == "memclr"then
-    dofile("Functions/HW/memclr/memclr.lua")
+    dofile("lualib/Functions/HW/memclr/memclr.lua")
     elseif cmd == "shutdown"then
-    dofile("Functions/HW/shutdown/opsd.lua")
+    dofile("lualib/Functions/HW/shutdown/opsd.lua")
     elseif cmd == "Hey lua"then
-    dofile("Functions/main/userprogs/AA/AA.lua")
+    dofile("lualib/Functions/main/userprogs/AA/AA.lua")
     elseif cmd == "hey Lua"then
-    dofile("Functions/main/userprogs/AA/AA.lua")
+    dofile("lualib/Functions/main/userprogs/AA/AA.lua")
     elseif cmd == "Hey Lua"then
-    dofile("Functions/main/userprogs/AA/AA.lua")
+    dofile("lualib/Functions/main/userprogs/AA/AA.lua")
     elseif cmd == "ping"then
-    dofile("Functions/HW/ping/ping.lua")
-    
+    dofile("lualib/Functions/HW/ping/ping.lua")
+    elseif cmd == "dir"then
+    dofile("lualib/Functions/FS/dir.lua")
+    elseif cmd == "du"then
+    dofile("lualib/Functions/FS/du.lua")
+    elseif cmd == "tasks"then
+    dofile("lualib/Functions/FS/tasks.lua")
+    elseif cmd == "fsCheck"then
+    dofile("lualib/Functions/FS/fsck.lua")
+    elseif cmd == "format"then
+    dofile("lualib/Functions/FS/fdisk.lua")
     else
     io.write("Please type a vaild command\n")
     dofile("main.lua")
