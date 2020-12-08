@@ -1,3 +1,4 @@
+
 --functions--
 io.write("Terminal is starting up --- done!\n")
 io.write("Making sure everything works --- Done!\n")
@@ -28,7 +29,7 @@ if cmd == "" then
     elseif cmd == "open"then
     dofile("lualib/Functions/main/open.lua")
     elseif cmd == "del"then
-    dofile("lualib/Functions/FS/del.lua")
+    dofile("lualib/Functions/main/del.lua")
     elseif cmd == "cal"then
     dofile("lualib/Functions/main/userprogs/cal.lua")
     elseif cmd == "hey lua"then
