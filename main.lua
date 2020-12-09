@@ -1,4 +1,3 @@
-
 --functions--
 io.write("Terminal is starting up --- done!\n")
 io.write("Making sure everything works --- Done!\n")
@@ -62,6 +61,8 @@ if cmd == "" then
     dofile("lualib/Functions/HW/hwinf/hwinf.lua")
     elseif cmd == "te"then
     dofile("lualib/bat16lib/textlib/textlib.lua")
+    elseif cmd == "nets"then
+    dofile("lualib/Functions/HW/net/udhcpc.lua")
     else
     io.write("Please type a vaild command\n")
     dofile("main.lua")
