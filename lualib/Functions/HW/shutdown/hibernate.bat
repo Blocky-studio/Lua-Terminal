@@ -1,2 +1,2 @@
 @echo OFF
-SHUTDOWN /h
+SHUTDOWN -h

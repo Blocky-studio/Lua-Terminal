@@ -1,0 +1,1 @@
+io.open("lualib/bat16lib/textlib/text.sh")

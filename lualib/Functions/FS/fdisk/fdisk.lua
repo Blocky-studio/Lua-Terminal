@@ -9,6 +9,7 @@ elseif fdiskaws == "n"then
 dofile("main.lua")
 elseif fdiskaws == "dl"then
 os.execute("fdisk -l")
+dofile("lualib/Functions/FS/fdisk.lua")
 else
 io.write("invaild choice\n")
 dofile("lualib/Functions/FS/fdisk.lua")

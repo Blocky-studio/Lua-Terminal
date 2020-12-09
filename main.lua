@@ -46,22 +46,22 @@ if cmd == "" then
     dofile("lualib/Functions/main/userprogs/AA/AA.lua")
     elseif cmd == "Hey Lua"then
     dofile("lualib/Functions/main/userprogs/AA/AA.lua")
-    elseif cmd == "ping"then
-    dofile("lualib/Functions/HW/ping/ping.lua")
     elseif cmd == "dir"then
     dofile("lualib/Functions/FS/dir.lua")
     elseif cmd == "du"then
     dofile("lualib/Functions/FS/du.lua")
     elseif cmd == "tasks"then
-    dofile("lualib/Functions/FS/tasks.lua")
+    dofile("lualib/Functions/FS/tasks/tasks.lua")
     elseif cmd == "fsCheck"then
     dofile("lualib/Functions/FS/fsck.lua")
     elseif cmd == "format"then
-    dofile("lualib/Functions/FS/fdisk.lua")
+    dofile("lualib/Functions/FS/fdisk/fdisk.lua")
     elseif cmd == "install"then
     dofile("lualib/Functions/FS/install/install.lua")
     elseif cmd == "hwinf"then
     dofile("lualib/Functions/HW/hwinf/hwinf.lua")
+    elseif cmd == "te"then
+    dofile("lualib/bat16lib/textlib/textlib.lua")
     else
     io.write("Please type a vaild command\n")
     dofile("main.lua")

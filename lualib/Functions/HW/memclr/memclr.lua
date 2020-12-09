@@ -25,4 +25,7 @@ elseif AWS == "N"then
 dofile("main.lua")
 elseif AWS == "n"then
 dofile("main.lua")
+else 
+io.write("please type a vaild command")
+dofile("lualib/Functions/HW/memclr/memclr.lua")
 end

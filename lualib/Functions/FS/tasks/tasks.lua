@@ -5,5 +5,5 @@ if aws == "1"then
 dofile("main.lua")
 else
 io.write("type a valid command!")
-dofile("lualib/Functions/FS/tasks.lua")
+dofile("lualib/Functions/FS/tasks/tasks.lua")
 end
