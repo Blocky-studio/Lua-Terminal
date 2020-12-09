@@ -1,0 +1,1 @@
+echo Computer Processor: %processor_architecture%

@@ -31,51 +31,51 @@ io.write("can not delete a system file!\n")
 dofile("lualib/Functions/main/del.lua")
 
 --checks to see if the person typed a full directory--
-elseif PATH == "Functions/main/about.lua"then
+elseif PATH == "lualib/Functions/main/about.lua"then
 io.write("can not delete a system file!\n")
 dofile("lualib/Functions/main/del.lua")
-elseif PATH == "Functions/main/CMD.lua"then
+elseif PATH == "lualib/Functions/main/CMD.lua"then
 io.write("can not delete a system file!\n")
 dofile("lualib/Functions/main/del.lua")
-elseif PATH == "Functions/main/del.lua"then
+elseif PATH == "lualib/Functions/main/del.lua"then
 io.write("can not delete a system file!\n")
 dofile("lualib/Functions/main/del.lua")
-elseif PATH == "Functions/main/dwnld.lua"then
+elseif PATH == "lualib/Functions/main/dwnld.lua"then
 io.write("can not delete a system file!\n")
 dofile("lualib/Functions/main/del.lua")
-elseif PATH == "Functions/main/echo.lua"then
+elseif PATH == "lualib/Functions/main/echo.lua"then
 io.write("can not delete a system file!\n")
 dofile("lualib/Functions/main/del.lua")
-elseif PATH == "Functions/main/exe.lua"then
+elseif PATH == "lualib/Functions/main/exe.lua"then
 io.write("can not delete a system file!\n")
 dofile("lualib/Functions/main/del.lua")
-elseif PATH == "Functions/main/help.lua"then
+elseif PATH == "lualib/Functions/main/help.lua"then
 io.write("can not delete a system file!\n")
 dofile("lualib/Functions/main/del.lua")
-elseif PATH == "Functions/main/open.lua"then
+elseif PATH == "lualib/Functions/main/open.lua"then
 io.write("can not delete a system file!\n")
 dofile("lualib/Functions/main/del.lua")
 
 --checks to see if the user typed a directory for the HW folder--
-elseif PATH == "Functions/HW/memclr/memclr.lua"then
+elseif PATH == "lualib/Functions/HW/memclr/memclr.lua"then
 io.write("can not delete a system file!\n")
 dofile("lualib/Functions/main/del.lua")
 elseif PATH == "memclr.lua"then
 io.write("can not delete a system file!\n")
 dofile("lualib/Functions/main/del.lua")
-elseif PATH == "Functions/HW/shutdown/opsd.lua"then
+elseif PATH == "lualib/Functions/HW/shutdown/opsd.lua"then
 io.write("can not delete a system file!\n")
 dofile("lualib/Functions/main/del.lua")
-elseif PATH == "Functions/HW/shutdown/logoff.bat"then
+elseif PATH == "lualib/Functions/HW/shutdown/logoff.bat"then
 io.write("can not delete a system file!\n")
 dofile("lualib/Functions/main/del.lua")
-elseif PATH == "Functions/HW/shutdown/shutdown.bat"then
+elseif PATH == "lualib/Functions/HW/shutdown/shutdown.bat"then
 io.write("can not delete a system file!\n")
 dofile("lualib/Functions/main/del.lua")
-elseif PATH == "Functions/HW/shutdown/restart.bat"then
+elseif PATH == "lualib/Functions/HW/shutdown/restart.bat"then
 io.write("can not delete a system file!\n")
 dofile("lualib/Functions/main/del.lua")
-elseif PATH == "Functions/HW/shutdown/hibernate.bat"then
+elseif PATH == "lualib/Functions/HW/shutdown/hibernate.bat"then
 io.write("can not delete a system file!\n")
 dofile("lualib/Functions/main/del.lua")
 --checks to see if the user typed a file for the calc folder--

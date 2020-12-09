@@ -1,4 +1,4 @@
-io.write("Lua terminal version:1.0.0\n")
+io.write("Lua terminal version:1.1.4\n")
 io.write("update?y/n\n")
 A = io.read()
 if A == "y" then

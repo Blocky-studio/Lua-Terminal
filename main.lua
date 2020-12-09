@@ -58,6 +58,10 @@ if cmd == "" then
     dofile("lualib/Functions/FS/fsck.lua")
     elseif cmd == "format"then
     dofile("lualib/Functions/FS/fdisk.lua")
+    elseif cmd == "install"then
+    dofile("lualib/Functions/FS/install/install.lua")
+    elseif cmd == "hwinf"then
+    dofile("lualib/Functions/HW/hwinf/hwinf.lua")
     else
     io.write("Please type a vaild command\n")
     dofile("main.lua")

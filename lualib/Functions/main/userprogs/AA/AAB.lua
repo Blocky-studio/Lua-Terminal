@@ -3,18 +3,18 @@ AWS = io.read()
 
 if AWS == "open calculator"then
 io.write("opening calculator\n")
-dofile("Functions/calc/calc.lua")
+dofile("lualib/Functions/calc/calc.lua")
 elseif AWS == "open Calender"then
 io.write("opening Calender\n")
-dofile("Functions/main/cal.lua")
+dofile("lualib/Functions/main/cal.lua")
 elseif AWS == "restart"then
 dofile("main.lua")
 elseif AWS == "open about"then
 io.write("Opening about\n")
-dofile("Functions/main/about.lua")
+dofile("lualib/Functions/main/about.lua")
 elseif AWS == "open CMD"then
 io.write("opening CMD\n")
-dofile("Functions/main/CMD.lua")
+dofile("lualib/Functions/main/CMD.lua")
 elseif AWS == "shutdown" then
-dofile("Functions/HW/shutdown/opsd.lua")
+dofile("lualib/Functions/HW/shutdown/opsd.lua")
 end

@@ -7,13 +7,16 @@ io.write("5 = exit\n")
 
 option = io.read()
 if option == "1"then
-io.popen("Functions/HW/shutdown/logoff.bat")
+io.popen("lualib/Functions/HW/shutdown/logoff.bat")
 elseif option == "2"then
-io.popen("Functions/HW/shutdown/restart.bat")
+io.popen("lualib/Functions/HW/shutdown/restart.bat")
 elseif option == "3"then
-io.popen("Functions/HW/shutdown/hibernate.bat")
+io.popen("lualib/Functions/HW/shutdown/hibernate.bat")
 elseif option == "4"then
-io.popen("Functions/HW/shutdown/shutdown.bat")
+io.popen("lualib/Functions/HW/shutdown/shutdown.bat")
 elseif option == "5"then
 dofile("main.lua")
+else
+io.write("please type a vaild command")
+dofile("lualib/Functions/HW/shutdown/opsd.lua")
 end
