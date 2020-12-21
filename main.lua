@@ -61,8 +61,12 @@ if cmd == "" then
     dofile("lualib/Functions/HW/hwinf/hwinf.lua")
     elseif cmd == "te"then
     dofile("lualib/bat16lib/textlib/textlib.lua")
-    elseif cmd == "nets"then
-    dofile("lualib/Functions/HW/net/udhcpc.lua")
+    elseif cmd == "kill"then
+    dofile("lualib/Functions/FS/tasks/kill.lua")
+    elseif cmd == "cc"then
+    dofile("lualib/Functions/FS/cc.lua")
+    elseif cmd == "pwd"then
+    dofile("lualib/Functions/FS/pwd.lua")
     else
     io.write("Please type a vaild command\n")
     dofile("main.lua")
