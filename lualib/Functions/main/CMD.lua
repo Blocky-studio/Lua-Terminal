@@ -9,5 +9,5 @@ after = io.read()
 if after == "1" then 
 dofile("Functions/main/CMD.lua")
 elseif after == "2" then
-dofile("main.lua")
+dofile("ui.lua")
 end

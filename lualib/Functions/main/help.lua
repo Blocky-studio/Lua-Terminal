@@ -6,7 +6,7 @@ io.write("4.echo - types what you want the terminal to type\n")
 io.write("5.CMD - opens the Unix commmand prompt app\n")
 io.write("6.exe - open the excute program\n")
 io.write("7.open - opens the lua opener program\n")
-io.write("8.hey lua -opens the automated assistant\n")
+io.write("8.cc -opens the automated assistant\n")
 io.write("9.dwnld -opens the download program \n")
 io.write("10.memclr - open the memclr program\n")
 io.write("11.hwinf - open the hardware info program\n")
@@ -24,9 +24,10 @@ io.write("19.install- installs LuaTerminal onto a hard disk\n")
 
 
 
+
 ex = io.read()
 if ex == "exit"then
-    dofile("main.lua")
+    dofile("ui.lua")
     else
     io.write("invaild command")
     dofile("lualib/Functions/main/help.lua")

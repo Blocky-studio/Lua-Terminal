@@ -10,10 +10,10 @@ io.write("type exit to exit\n")
 
 cexit = io.read()
 if cexit == "exit"then
-dofile("main.lua")
+dofile("ui.lua")
 elseif cexi == "date"then
 dofile("Functions/main/userprogs/cal.lua")
 else
 io.write("type a vaild command!")
-dofile("Functions/main/userprogs/cal.lua")
+dofile("lualib/Functions/main/userprogs/cal.lua")
 end

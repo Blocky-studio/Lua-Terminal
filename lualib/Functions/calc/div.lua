@@ -4,13 +4,13 @@ io.write("whats the first number?\n")
         io.write("whats the second number?\n")
         DIV2 = io.read()
         io.write("= ")
-        DE = DIV1*DIV2
+        DE = DIV1/DIV2
         io.write(DE)
         io.write(" \n")
         io.write("type exit to go back to calc or type / to divide again\n")
         OPT = io.read()
         if OPT == "exit" then 
-        dofile("Functions/calc/calc.lua")
+        dofile("lualib/Functions/calc/calc.lua")
         elseif OPT == "/"then
-        dofile("Functions/calc/div.lua")
+        dofile("lualib/Functions/calc/div.lua")
         end

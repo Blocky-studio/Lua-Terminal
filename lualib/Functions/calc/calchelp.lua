@@ -7,8 +7,8 @@ io.write("6. exit - exites the program\n")
 io.write("type exit to go back to calc.lua\n")
 A = io.read()
 if A == "exit"then
-dofile("Functions/calc/calc.lua")
+dofile("lualib/Functions/calc/calc.lua")
 else
 io.write("type a valid command!\n")
-dofile("Functions/calc/calchelp.lua")
+dofile("lualib/Functions/calc/calchelp.lua")
 end

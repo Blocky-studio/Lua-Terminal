@@ -11,12 +11,12 @@ io.write("\n")
 io.write("type PI to do it again or type exit to go back to calc\n")
 C = io.read()
 if C == "PI"then
-dofile("Functions/calc/pi.lua")
+dofile("lualib/Functions/calc/pi.lua")
 elseif C == "pi"then 
-dofile("Functions/calc/pi.lua")
+dofile("lualib/Functions/calc/pi.lua")
 elseif C == "exit"then
-dofile("Functions/calc/calc.lua")
+dofile("lualib/Functions/calc/calc.lua")
 else
 io.write("type a vaild command!")
-dofile("Functions/calc/pi.lua")
+dofile("lualib/Functions/calc/pi.lua")
 end

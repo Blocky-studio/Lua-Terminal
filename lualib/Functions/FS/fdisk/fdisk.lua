@@ -4,9 +4,9 @@ if fdiskaws == "y"then
 dir = io.read()
 os.execute("fdisk '" .. dir .. "'")
 io.write("done\n")
-dofile("main.lua")
+dofile("ui.lua")
 elseif fdiskaws == "n"then
-dofile("main.lua")
+dofile("ui.lua")
 elseif fdiskaws == "dl"then
 os.execute("fdisk -l")
 dofile("lualib/Functions/FS/fdisk.lua")

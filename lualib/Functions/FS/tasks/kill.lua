@@ -1,4 +1,4 @@
-io.write("type the PID of the process you want to kill")
+io.write("type the PID of the process you want to kill\n")
 pid = io.read()
 os.execute("kill -9 '" .. pid .. "'")
-dofile("main.lua")
+dofile("ui.lua")

@@ -18,13 +18,13 @@ io.write("clearing memory")
 --if the user types no--
 
 elseif AWS == "No"then
-dofile("main.lua")
+dofile("ui.lua")
 elseif AWS == "no"then
-dofile("main.lua")
+dofile("ui.lua")
 elseif AWS == "N"then
-dofile("main.lua")
+dofile("ui.lua")
 elseif AWS == "n"then
-dofile("main.lua")
+dofile("ui.lua")
 else 
 io.write("please type a vaild command")
 dofile("lualib/Functions/HW/memclr/memclr.lua")

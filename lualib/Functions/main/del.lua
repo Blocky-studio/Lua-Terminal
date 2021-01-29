@@ -2,6 +2,15 @@ io.write("type the directory of were you want to delete\n")
 
 PATH = io.read()
 
+function file_check(name)
+   local f=io.open(name,"r")
+   if f~=nil then 
+   io.close(f) return true else 
+   io.write("file does not exist!\n") 
+   dofile("lualib/Functions/main/del.lua")
+   end
+end
+
 
 --checks to see if the user deletes a system file--
 --checks to see if the user typed a file for the main folder--
@@ -114,26 +123,48 @@ dofile("lualib/Functions/main/del.lua")
 elseif PATH == "lualib/Functions/calc/pi.lua"then
 io.write("can not delete a system file!\n")
 dofile("lualib/Functions/main/del.lua")
---checks to see if the person typed the main.lua file--
+
+--checks to see if the person typed the main.lua file or the  ui.lua--
 elseif PATH == "main.lua"then
 io.write("can not delete a system file!\n")
 dofile("lualib/Functions/main/del.lua")
+elseif PATH == "ui.lua"then
+io.write("can not delete a system file!\n")
+dofile("lualib/Functions/main/del.lua")
+elseif PATH == "bootmgr.lua"then
+io.write("can not delete a system file!\n")
+dofile("lualib/Functions/main/del.lua")
+
 --checks to see if the person typed a userprogs directory--
-elseif PATH == "lualib/Functions/main/userprogs/AA/AA.lua"then
-io.write("can not delete a system file!\n")
-dofile("lualib/Functions/main/del.lua")
-elseif PATH == "lualib/Functions/main/userprogs/AA/AAB.lua"then
-io.write("can not delete a system file!\n")
-dofile("lualib/Functions/main/del.lua")
-elseif PATH == "lualib/Functions/main/userprogs/GTC/GTC.lua"then
-io.write("can not delete a system file!\n")
-dofile("lualib/Functions/main/del.lua")
 elseif PATH == "lualib/Functions/main/userprogs/programs"then
 io.write("can not delete a system file!\n")
 dofile("lualib/Functions/main/del.lua")
 elseif PATH == "lualib/Functions/main/userprogs"then
 io.write("can not delete a system file!\n")
 dofile("lualib/Functions/main/del.lua")
+
+--checks to see if user typed utils directory--
+elseif PATH == "lualib/utils/secure/login.lua"then
+io.write("can not delete a system file!\n")
+dofile("lualib/Functions/main/del.lua")
+elseif PATH == "lualib/utils/secure/logoff.lua"then
+io.write("can not delete a system file!\n")
+dofile("lualib/Functions/main/del.lua")
+elseif PATH == "lualib/utils/users/users.lua"then
+io.write("can not delete a system file!\n")
+dofile("lualib/Functions/main/del.lua")
+
+--checks to see if the user typed the bootcheck directory--
+elseif PATH == "lualib/bootcheck/bootcheck/bootc.lua"then
+io.write("can not delete a system file!\n")
+dofile("lualib/Functions/main/del.lua")
+elseif PATH == "lualib/bootcheck/bootbackup/bootb.lua"then
+io.write("can not delete a system file!\n")
+dofile("lualib/Functions/main/del.lua")
+
+elseif PATH == "exit"then
+dofile("ui.lua")
 else
+file_check(PATH)
 os.remove(PATH)
 end

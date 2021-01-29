@@ -14,11 +14,11 @@ if not body then error(code) end
 local f = assert(io.open('master.zip', 'wb')) -- open in "binary" mode
 f:write(body)
 f:close()
-dofile("main.lua")
+dofile("ui.lua")
 end
 
 if A == "n" then
     
-    dofile("main.lua")
+    dofile("ui.lua")
     
     end

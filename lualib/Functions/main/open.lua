@@ -17,7 +17,7 @@ print (fileContent);
 
 after = io.read()
 if after == "exit" then
-dofile("main.lua")
+dofile("ui.lua")
 elseif after == "open" then
 dofile("open.lua")
 end

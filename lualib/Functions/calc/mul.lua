@@ -10,7 +10,7 @@ io.write("whats the first number?\n")
         io.write("type exit to go back to calc or type * to multipy again\n")
         OPT = io.read()
         if OPT == "exit"then
-        dofile("Functions/calc/calc.lua")
+        dofile("lualib/Functions/calc/calc.lua")
         elseif OPT == "*"then
-        dofile("Functions/calc/mul.lua")
+        dofile("lualib/Functions/calc/mul.lua")
         end
