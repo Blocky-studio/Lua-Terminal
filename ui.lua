@@ -577,10 +577,6 @@ elseif cmd == "users"then
 elseif cmd == "Backup"then
 	dofile("lualib/bootcheck/bootbackup/bootb.lua")
 
-  --HTML--
-elseif cmd == "browser"then
-  io.popen("index.html")
-
 	--else--
 else
 	io.write("Please type a vaild command\n")
