@@ -2,6 +2,9 @@ user = "me"
 SUDO = "sudo"
 PASSWD = "000000"
 SUDO = false
+multipass = false
+autologin = false
+if autologin == false then
 io.write("Login\n")
 io.write("~$ ")
 opt = io.read()
@@ -31,4 +34,8 @@ dofile("lualib/utils/secure/logoff.lua")
 else
 io.write("user does not exist\n")
 dofile("lualib/utils/secure/login.lua")
+end
+else
+SUDO = false 
+dofile("ui.lua")
 end
