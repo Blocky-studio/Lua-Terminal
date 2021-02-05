@@ -14,7 +14,7 @@ pass = io.read()
 if pass == PASSWD then
 SUDO = true
 io.write("Welcome back!\n")
-dofile("ui.lua")
+dofile("boothtml.lua")
 else
 io.write("password is incorrect\n")
 dofile("lualib/utils/secure/login.lua")
@@ -24,7 +24,7 @@ io.write("password:")
 pass = io.read()
 if pass == PASSWD then
 io.write("Welcome back!\n")
-dofile("ui.lua")
+dofile("boothtml.lua")
 else
 io.write("password is incorrect\n")
 dofile("lualib/utils/secure/login.lua")
@@ -37,5 +37,5 @@ dofile("lualib/utils/secure/login.lua")
 end
 else
 SUDO = false 
-dofile("ui.lua")
+dofile("boothtml.lua")
 end

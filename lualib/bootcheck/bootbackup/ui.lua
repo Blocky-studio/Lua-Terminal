@@ -577,14 +577,6 @@ elseif cmd == "users"then
 elseif cmd == "Backup"then
 	dofile("lualib/bootcheck/bootbackup/bootb.lua")
 
---Read--
-elseif cmd == "read"then
-  dofile("lualib/fileIO/opttext.lua")
-
---inet check--
-elseif cmd == "inet c"then
-  dofile("lualib/net/inetcheck.lua")
-
 	--else--
 else
 	io.write("Please type a vaild command\n")

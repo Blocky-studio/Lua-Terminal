@@ -73,3 +73,4 @@ file_check("ui.lua")
 
 collectgarbage()
 dofile("lualib/boot/bootmgr.lua")
+
