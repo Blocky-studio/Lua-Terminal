@@ -574,6 +574,7 @@ elseif cmd == "exit"then
 elseif cmd == "users"then
 	dofile("lualib/utils/users/users.lua")
 
+--backup--
 elseif cmd == "Backup"then
 	dofile("lualib/bootcheck/bootbackup/bootb.lua")
 
@@ -584,6 +585,14 @@ elseif cmd == "read"then
 --inet check--
 elseif cmd == "inet c"then
   dofile("lualib/net/inetcheck.lua")
+ 
+ --bt check--
+elseif cmd == "inet bc"then
+  dofile("lualib/net/betcheck.lua")
+
+--web cc-- 
+elseif cmd == "inet connect"then
+dofile("lualib/net/inetcc.lua")
 
 	--else--
 else
