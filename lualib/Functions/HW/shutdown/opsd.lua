@@ -15,7 +15,7 @@ io.popen("lualib/Functions/HW/shutdown/hibernate.bat")
 elseif option == "4"then
 io.popen("lualib/Functions/HW/shutdown/shutdown.bat")
 elseif option == "5"then
-dofile("ui.lua")
+os.execute("python pythonlib/ui/gui.py")
 else
 io.write("please type a vaild command")
 dofile("lualib/Functions/HW/shutdown/opsd.lua")

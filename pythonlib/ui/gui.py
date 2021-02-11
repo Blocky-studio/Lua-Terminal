@@ -5,9 +5,9 @@ sg.ChangeLookAndFeel('LightGreen')
 sg.SetOptions(element_padding=(0, 0))      
 
     # ------ Menu Definition ------ #      
-menu_def = [['Menu', ['Logout', 'imager', 'Terminal', 'Shutdown'  ]],      
+menu_def = [['Menu', ['Logout', 'imager', 'Terminal','Calender', 'Email' ,'Shutdown'  ]],      
                 ['Edit', ['Paste', ['Special', 'Normal', ], 'Undo', 'save', 'open'], ],      
-                ['Help', 'About...'], ]      
+                ['Help', 'About...'], ['Games',['Chess']] ]      
 
     # ------ GUI Defintion ------ #      
 layout = [      
@@ -37,3 +37,7 @@ while True:
           sg.popup('Luthon v4.0, ui v1.0')     
         elif event == "Shutdown":
           os.system("lua lualib/Functions/HW/shutdown/opsd.lua")
+        elif event == "Calender":
+          os.system("python pythonlib/PYapps/Calendar.py")
+        elif event == "Email":
+          os.system("python pythonlib/PYapps/Email.py")

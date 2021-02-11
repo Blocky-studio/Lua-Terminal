@@ -13,3 +13,4 @@ elseif opt2 == "2"then
 dofile("ui.lua")
 else 
 io.write("invalid option")
+end
