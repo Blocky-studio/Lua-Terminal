@@ -6,7 +6,11 @@ put the files into the same folder and use lua to excute it
 
 Requirements:
 PYSIMPLEGUI package: avalible by using: pip install Pysimplegui
+
+
 Lua
+
+
 python
 
 use cases:
