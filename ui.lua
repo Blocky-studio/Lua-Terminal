@@ -594,6 +594,10 @@ elseif cmd == "inet bc"then
 elseif cmd == "inet connect"then
 dofile("lualib/net/inetcc.lua")
 
+--gui--
+elseif cmd == "gui"then
+os.execute("python pythonlib/ui/gui.py")
+
 	--else--
 else
 	io.write("Please type a vaild command\n")

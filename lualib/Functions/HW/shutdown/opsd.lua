@@ -7,7 +7,7 @@ io.write("5 = exit\n")
 
 option = io.read()
 if option == "1"then
-io.popen("lualib/Functions/HW/shutdown/logoff.bat")
+dofile("lualib/utils/secure/logoff.lua")
 elseif option == "2"then
 io.popen("lualib/Functions/HW/shutdown/restart.bat")
 elseif option == "3"then
