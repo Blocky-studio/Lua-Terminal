@@ -5,8 +5,8 @@ sg.ChangeLookAndFeel('LightGreen')
 sg.SetOptions(element_padding=(0, 0))      
 
     # ------ Menu Definition ------ #      
-menu_def = [['Menu', ['Logout', 'imager', 'Terminal','Calender', 'Email' ,'Shutdown'  ]],      
-                ['Edit', ['Paste', ['Special', 'Normal', ], 'Undo', 'save', 'open'], ],      
+menu_def = [['Menu', ['Logout', 'imager', 'Terminal','Calender', 'Email' ,'Web','Shutdown'  ]],      
+                ['Edit', ['Paste', ['Special', 'Normal', ], 'Undo', 'Text', 'open',], ],['maintenance',['Print diag']],      
                 ['Help', 'About...'], ['Games',['Chess']] ]      
 
     # ------ GUI Defintion ------ #      
@@ -24,7 +24,8 @@ while True:
         if event == sg.WIN_CLOSED or event == 'Logout':      
             os.system("lua lualib/utils/secure/logoff.lua")    
             break
-        print('Button = ', event)      
+        print('Button = ', event)  
+            
         # ------ Process menu choices ------ #      
         if event == 'Terminal':      
             os.system("lua ui.lua")    
@@ -41,3 +42,10 @@ while True:
           os.system("python pythonlib/PYapps/Calendar.py")
         elif event == "Email":
           os.system("python pythonlib/PYapps/Email.py")
+        elif event == "Print diag":
+          print('starting print service test...')
+          os.system("java javalib/print/printdiag.java")
+        elif event == "Web":
+          os.system("java javalib/net/Webbrowser.java")
+        elif event == "Text":
+          os.system("python pythonlib/PYapps/texteditor.py")
