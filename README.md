@@ -8,10 +8,9 @@ Requirements:
 PYSIMPLEGUI package: avalible by using: pip install Pysimplegui
 
 
-Lua
-
-
-python
+Lua (Sudo apt install lua5.1)
+Java(Sudo apt install java)
+python(Sudo apt install pip)
 
 use cases:
 1. the class room for work

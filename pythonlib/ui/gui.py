@@ -6,7 +6,7 @@ sg.SetOptions(element_padding=(0, 0))
 
     # ------ Menu Definition ------ #      
 menu_def = [['Menu', ['Logout', 'imager', 'Terminal','Calender', 'Email' ,'Web','Shutdown'  ]],      
-                ['Edit', ['Paste', ['Special', 'Normal', ], 'Undo', 'Text', 'open',], ],['maintenance',['Print diag']],      
+                ['Edit', ['Paste', ['Special', 'Normal', ], 'Undo', 'Text', 'open',], ],['maintenance',['Print diag','Bluetooth']],      
                 ['Help', 'About...'], ['Games',['Chess']] ]      
 
     # ------ GUI Defintion ------ #      
@@ -41,7 +41,7 @@ while True:
         elif event == "Calender":
           os.system("python pythonlib/PYapps/Calendar.py")
         elif event == "Email":
-          os.system("python pythonlib/PYapps/Email.py")
+          os.system("go run golib/net/email.go")
         elif event == "Print diag":
           print('starting print service test...')
           os.system("java javalib/print/printdiag.java")
@@ -49,3 +49,5 @@ while True:
           os.system("java javalib/net/Webbrowser.java")
         elif event == "Text":
           os.system("python pythonlib/PYapps/texteditor.py")
+        elif event == "Bluetooth":
+          os.system("python pythonlib/net/bt.py")
