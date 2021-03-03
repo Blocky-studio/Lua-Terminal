@@ -19,7 +19,7 @@ func main() {
 
   // Receiver email address.
   to := []string{
-    "sender@example.com",
+    "",
   }
 
   // smtp server configuration.

@@ -1,0 +1,1 @@
+echo "lua main.lua"

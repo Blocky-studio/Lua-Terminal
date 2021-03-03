@@ -5,7 +5,7 @@ sg.ChangeLookAndFeel('LightGreen')
 sg.SetOptions(element_padding=(0, 0))      
 
     # ------ Menu Definition ------ #      
-menu_def = [['Menu', ['Logout', 'imager', 'Terminal','Calender', 'Email' ,'Web','Shutdown'  ]],      
+menu_def = [['Menu', ['Logout', 'imager', 'Terminal','Calender', 'Email' ,'Web','Calculator','Shutdown'  ]],      
                 ['Edit', ['Paste', ['Special', 'Normal', ], 'Undo', 'Text', 'open',], ],['maintenance',['Print diag','Bluetooth']],      
                 ['Help', 'About...'], ['Games',['Chess']] ]      
 
@@ -46,8 +46,11 @@ while True:
           print('starting print service test...')
           os.system("java javalib/print/printdiag.java")
         elif event == "Web":
-          os.system("java javalib/net/Webbrowser.java")
+           print("starting web services")
+           os.system("java javalib/net/Webbrowser.java")
         elif event == "Text":
           os.system("python pythonlib/PYapps/texteditor.py")
         elif event == "Bluetooth":
           os.system("python pythonlib/net/bt.py")
+        elif event == "Calculator":
+          os.system("python pythonlib/PYapps/calc.py")
