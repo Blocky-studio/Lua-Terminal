@@ -1,8 +1,9 @@
 import PySimpleGUI as sg   
 import os   
 
-sg.ChangeLookAndFeel('LightGreen')      
-sg.SetOptions(element_padding=(0, 0))      
+
+
+     
 
     # ------ Menu Definition ------ #      
 menu_def = [['Menu', ['Logout', 'imager', 'Terminal','Calender', 'Email' ,'Web','Calculator','Shutdown'  ]],      
@@ -35,7 +36,7 @@ while True:
         elif event == 'imager':
             os.system("python pythonlib/ui/img.py") 
         elif event == 'About...':
-          sg.popup('Luthon v4.0, ui v1.0')     
+          sg.popup('Polar OS Version 8.0.1')     
         elif event == "Shutdown":
           os.system("lua lualib/Functions/HW/shutdown/opsd.lua")
         elif event == "Calender":

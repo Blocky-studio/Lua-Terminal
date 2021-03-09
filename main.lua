@@ -1,4 +1,3 @@
-
 collectgarbage()
 
 function file_check(NAME)
@@ -9,7 +8,17 @@ function file_check(NAME)
     end
 end
 
-file_check("ui.lua")
+function file_check_nill_replace(N)
+  local f=io.open(N,"r")
+   if f~=nil then 
+   io.close(f) return true else 
+    os.execute("python pythonlib/err/recovery.py")
+end
+end
+
+
+
+file_check_nill_replace("ui.lua")
 
 --file check calc--
 file_check("lualib/Functions/calc/add.lua")

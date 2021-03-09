@@ -33,6 +33,7 @@ elseif opt == "exit"then
 dofile("lualib/utils/secure/logoff.lua")
 else
 io.write("user does not exist\n")
+os.execute("java javalib/secure/usererror.java")
 dofile("lualib/utils/secure/login.lua")
 end
 else

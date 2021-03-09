@@ -1,4 +1,3 @@
-
 collectgarbage()
 
 function file_check(NAME)
@@ -9,7 +8,17 @@ function file_check(NAME)
     end
 end
 
-file_check("ui.lua")
+function file_check_nill_replace(N)
+  local f=io.open(N,"r")
+   if f~=nil then 
+   io.close(f) return true else 
+    os.execute("python pythonlib/err/recovery.py")
+end
+end
+
+
+
+file_check_nill_replace("ui.lua")
 
 --file check calc--
 file_check("lualib/Functions/calc/add.lua")
@@ -41,7 +50,6 @@ file_check("lualib/Functions/HW/hwinf/hwinf.lua")
 file_check("lualib/Functions/HW/hwinf/inf.bat")
 file_check("lualib/Functions/HW/memclr/memclr.lua")
 file_check("lualib/Functions/HW/shutdown/hibernate.bat")
-file_check("lualib/Functions/HW/shutdown/logoff.bat")
 file_check("lualib/Functions/HW/shutdown/opsd.lua")
 file_check("lualib/Functions/HW/shutdown/restart.bat")
 file_check("lualib/Functions/HW/shutdown/shutdown.bat")
@@ -71,5 +79,13 @@ file_check("lualib/bootcheck/bootbackup/bootb.lua")
 --file check ui--
 file_check("ui.lua")
 
+--file check golib--
+file_check("golib/net/email.go")
+
+--file check javalib--
+file_check("javalib/net/Webbrowser.java")
+file_check("javalib/print/printdiag.java")
+
 collectgarbage()
 dofile("lualib/boot/bootmgr.lua")
+
