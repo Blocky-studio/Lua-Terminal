@@ -6,6 +6,4 @@ end
 os.execute("git clone https://github.com/Blockland-crpto/ui.lua-recov")
 os.execute("cp ui.lua-recov/ui.lua ui.lua")
 wait(10)
-os.execute("rm ui.lua-recov/ui.lua")
-os.execute("rm ui.lua-recov")
-dofile("main.lua")
+os.execute("rm -r -f ui.lua-recov")

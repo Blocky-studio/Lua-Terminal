@@ -1,7 +1,7 @@
 import PySimpleGUI as sg
 import os
 
-layout = [[sg.Text("Welcome to luthon!")], [sg.Button("LOGIN")]]
+layout = [[sg.Text("Welcome to Polar!")], [sg.Button("LOGIN")]]
 
 # Create the window
 window = sg.Window("Login", layout)

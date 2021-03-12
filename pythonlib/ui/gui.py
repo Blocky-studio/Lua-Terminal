@@ -1,21 +1,16 @@
 import PySimpleGUI as sg   
 import os   
 
-
-
-     
-
     # ------ Menu Definition ------ #      
 menu_def = [['Menu', ['Logout', 'imager', 'Terminal','Calender', 'Email' ,'Web','Calculator','Shutdown'  ]],      
-                ['Edit', ['Paste', ['Special', 'Normal', ], 'Undo', 'Text', 'open',], ],['maintenance',['Print diag','Bluetooth']],      
+                ['Edit', ['Paste', ['Special', 'Normal', ], 'Undo', 'Text', 'open',], ],['maintenance',['Print diag','Bluetooth','Memory Utility', 'FileRepair Utility']],      
                 ['Help', 'About...'], ['Games',['Chess']] ]      
 
     # ------ GUI Defintion ------ #      
 layout = [      
         [sg.Menu(menu_def, )],      
         [sg.Output(size=(60, 20))]     
-             ]      
-
+             ]     
 window = sg.Window("Home", layout, default_element_size=(12, 1), auto_size_text=False, auto_size_buttons=False,      
                        default_button_element_size=(12, 1))      
 
@@ -36,7 +31,7 @@ while True:
         elif event == 'imager':
             os.system("python pythonlib/ui/img.py") 
         elif event == 'About...':
-          sg.popup('Polar OS Version 8.0.1')     
+          sg.popup('Polar OS Version 8.1.0')     
         elif event == "Shutdown":
           os.system("lua lualib/Functions/HW/shutdown/opsd.lua")
         elif event == "Calender":
@@ -52,6 +47,10 @@ while True:
         elif event == "Text":
           os.system("python pythonlib/PYapps/texteditor.py")
         elif event == "Bluetooth":
-          os.system("python pythonlib/net/bt.py")
+          os.system("python pythonlib/net/btgui.py")
         elif event == "Calculator":
           os.system("python pythonlib/PYapps/calc.py")
+        elif event == "Memory Utility":
+          os.system("python pythonlib/PYapps/memclr.py")
+        elif event == "FileRepair Utility":
+          os.system("python pythonlib/err/filecheck.py")
