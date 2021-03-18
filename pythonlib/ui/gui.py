@@ -1,10 +1,13 @@
+from PIL import Image
 import PySimpleGUI as sg   
 import os   
+import urllib.request
+A = False
 
     # ------ Menu Definition ------ #      
 menu_def = [['Menu', ['Logout', 'imager', 'Terminal','Calender', 'Email' ,'Web','Calculator','Shutdown'  ]],      
                 ['Edit', ['Paste', ['Special', 'Normal', ], 'Undo', 'Text', 'open',], ],['maintenance',['Print diag','Bluetooth','Memory Utility', 'FileRepair Utility']],      
-                ['Help', 'About...'], ['Games',['Chess']] ]      
+                ['Help', 'About...'], ['Games'] ]      
 
     # ------ GUI Defintion ------ #      
 layout = [      
@@ -13,6 +16,12 @@ layout = [
              ]     
 window = sg.Window("Home", layout, default_element_size=(12, 1), auto_size_text=False, auto_size_buttons=False,      
                        default_button_element_size=(12, 1))      
+def inet():
+  try:
+        urllib.request.urlopen('http://216.58.192.142', timeout=2)
+        A = True
+  except:
+        A = False
 
     # ------ Loop & Process button menu choices ------ #      
 while True:      
@@ -24,14 +33,14 @@ while True:
             
         # ------ Process menu choices ------ #      
         if event == 'Terminal':      
-            os.system("lua ui.lua")    
+            os.system("lua ui.lua")  
         elif event == 'open':      
             filename = sg.popup_get_file('file to open', no_window=True)      
             print(filename)
         elif event == 'imager':
             os.system("python pythonlib/ui/img.py") 
         elif event == 'About...':
-          sg.popup('Polar OS Version 8.1.0')     
+          sg.popup('Polar OS Version 8.1.1')     
         elif event == "Shutdown":
           os.system("lua lualib/Functions/HW/shutdown/opsd.lua")
         elif event == "Calender":

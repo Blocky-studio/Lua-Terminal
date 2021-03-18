@@ -4,7 +4,7 @@ import urllib.request
 A = True
 
 layout = [[sg.Text('ERROR file not found')],
-[sg.Text('A system file(s) are missing. there are no avilble backups to restore from. in order to repair your PC, we need internet. please connect to the internet and click Network reinstall')],
+[sg.Text('A system file(s) are missing. there are no ava nk0[] ilble backups to restore from. in order to repair your PC, we need internet. please connect to the internet and click Network reinstall')],
 [sg.Button('Network reinstall'), sg.Exit()],
 ]
 

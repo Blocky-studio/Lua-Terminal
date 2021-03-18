@@ -7,5 +7,5 @@ else
 io.write("Excuting ")
 io.write(EXE)
 io.write("\n")
-dofile(EXE)
+pcall(EXE)
 end

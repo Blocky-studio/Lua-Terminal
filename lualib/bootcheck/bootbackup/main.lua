@@ -79,9 +79,6 @@ file_check("lualib/bootcheck/bootbackup/bootb.lua")
 --file check ui--
 file_check("ui.lua")
 
---file check golib--
-file_check("golib/net/email.go")
-
 --file check javalib--
 file_check("javalib/net/Webbrowser.java")
 file_check("javalib/print/printdiag.java")
