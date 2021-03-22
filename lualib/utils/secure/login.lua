@@ -1,6 +1,8 @@
-USER = "me"
-SUDO = "sudo"
-PASSWD = "000000"
+local file = io.open("lualib/utils/secure/users.txt", "r")
+local user = file:read( "*all" )
+local file2 = io.open("lualib/utils/secure/pass.txt", "r")
+local PASSWD = file2:read( "*all" )
+
 SUDO = false
 multipass = false
 autologin = false

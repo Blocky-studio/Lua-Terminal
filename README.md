@@ -4,11 +4,10 @@ put the files into the same folder and use lua to excute it
 
 Requirements:
 Pysimplegui (pip install pysimplegui)
-pynput (pip install pynput)
 Lua (Sudo apt install lua5.1)
 Java (Sudo apt install java)
-python (Sudo apt install pip)
-
+pip (Sudo apt install pip)
+Python3 (Sudo apt install python3)
 
 Special thanks to:
 Israel-dryer (the text editor and calculator are his code)
@@ -20,8 +19,7 @@ Java (some Networking-GUI componets are written in Java)
 use cases:
 1. the class room for work
 2. for tech enthusiest
-3. for desktop users
-4. for elderly hardware
+3. for desktop us4. for elderly hardware
 
 minimum Requirements:
 CPU: single core 500 MHZ CPU

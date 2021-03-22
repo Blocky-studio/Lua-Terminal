@@ -1,3 +1,4 @@
+os.execute("pip install pysimplegui")
 collectgarbage()
 
 function file_check(NAME)
@@ -84,5 +85,13 @@ file_check("javalib/net/Webbrowser.java")
 file_check("javalib/print/printdiag.java")
 
 collectgarbage()
-dofile("lualib/boot/bootmgr.lua")
+local file = io.open("lualib/utils/fts/var.txt", "r")
+local contents = file:read( "*all" )
 
+if contents == "true"then
+file:close()
+dofile("lualib/utils/fts/fts.lua")
+else
+file:close()
+dofile("lualib/boot/bootmgr.lua")
+end

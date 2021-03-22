@@ -2,7 +2,7 @@ from PIL import Image
 import PySimpleGUI as sg   
 import os   
 import urllib.request
-A = False
+A = None
 
     # ------ Menu Definition ------ #      
 menu_def = [['Menu', ['Logout', 'imager', 'Terminal','Calender', 'Email' ,'Web','Calculator','Shutdown'  ]],      
@@ -40,19 +40,21 @@ while True:
         elif event == 'imager':
             os.system("python pythonlib/ui/img.py") 
         elif event == 'About...':
-          sg.popup('Polar OS Version 8.1.1')     
+          sg.popup('Polar OS Version 8.1.2')     
         elif event == "Shutdown":
           os.system("lua lualib/Functions/HW/shutdown/opsd.lua")
         elif event == "Calender":
           os.system("python pythonlib/PYapps/Calendar.py")
-        elif event == "Email":
-          os.system("go run golib/net/email.go")
         elif event == "Print diag":
           print('starting print service test...')
           os.system("java javalib/print/printdiag.java")
         elif event == "Web":
-           print("starting web services")
-           os.system("java javalib/net/Webbrowser.java")
+          inet()
+          if A == True:
+             print("starting web services")
+             os.system("java javalib/net/Webbrowser.java")
+          else:
+             sg.popup('Unable to Connect to internet!')
         elif event == "Text":
           os.system("python pythonlib/PYapps/texteditor.py")
         elif event == "Bluetooth":
