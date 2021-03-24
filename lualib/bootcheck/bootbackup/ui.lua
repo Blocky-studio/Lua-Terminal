@@ -598,6 +598,8 @@ dofile("lualib/net/inetcc.lua")
 elseif cmd == "gui"then
 os.execute("python pythonlib/ui/gui.py")
 
+elseif cmd == "cpu cores"
+os.execute("java javalib/hwinf/cpuinf.java")
 	--else--
 else
 	io.write("Please type a vaild command\n")

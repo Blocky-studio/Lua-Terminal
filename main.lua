@@ -50,10 +50,8 @@ file_check("lualib/Functions/FS/pwd.lua")
 file_check("lualib/Functions/HW/hwinf/hwinf.lua")
 file_check("lualib/Functions/HW/hwinf/inf.bat")
 file_check("lualib/Functions/HW/memclr/memclr.lua")
-file_check("lualib/Functions/HW/shutdown/hibernate.bat")
 file_check("lualib/Functions/HW/shutdown/opsd.lua")
-file_check("lualib/Functions/HW/shutdown/restart.bat")
-file_check("lualib/Functions/HW/shutdown/shutdown.bat")
+
 
 --File check main--
 file_check("lualib/Functions/main/about.lua")
@@ -73,9 +71,6 @@ file_check("lualib/utils/secure/login.lua")
 --file check boot--
 file_check("lualib/boot/bootmgr.lua")
 
---file check bootcheck--
-file_check("lualib/bootcheck/bootcheck/bootc.lua")
-file_check("lualib/bootcheck/bootbackup/bootb.lua")
 
 --file check ui--
 file_check("ui.lua")
