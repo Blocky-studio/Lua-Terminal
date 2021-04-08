@@ -2,7 +2,7 @@
 how to use:
 put the files into the same folder and use lua to excute it
 
-NOTE: Polar OS is not for install on diffrent hardware other then RASPBIAN LITE with OPENBOX
+NOTE: Polar OS is not for install on diffrent hardware other then RASPBIAN LITE with XFCE
 
 Requirements:
 Pysimplegui (pip install pysimplegui)
@@ -10,6 +10,7 @@ Lua (Sudo apt install lua5.1)
 Java (Sudo apt install java)
 pip (Sudo apt install pip)
 Python3 (Sudo apt install python3)
+Xorg & XFCE (Sudo apt install xorg xfce)
 
 Special thanks to:
 Israel-dryer (the text editor and calculator are his code)

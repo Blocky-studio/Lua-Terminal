@@ -1,1 +1,1 @@
-os.execute()
+os.execute("python pythonlib/net/inetcheck.py")

@@ -19,6 +19,7 @@ io.write("Welcome back!\n")
 os.execute("python pythonlib/ui/gui.py")
 else
 io.write("password is incorrect\n")
+os.execute("java javalib/errlib/logine.java")
 dofile("lualib/utils/secure/login.lua")
 end
 elseif opt == user then

@@ -598,8 +598,18 @@ dofile("lualib/net/inetcc.lua")
 elseif cmd == "gui"then
 os.execute("python pythonlib/ui/gui.py")
 
-elseif cmd == "cpu cores"
+--Cpu info--
+elseif cmd == "cpuc" then
 os.execute("java javalib/hwinf/cpuinf.java")
+
+--total mem--
+elseif cmd == "tmem"then
+os.execute("java javalib/hwinf/meminf.java")
+
+--free mem--
+elseif cmd == "fmem"then
+os.execute("java javalib/hwinf/fmem.java")
+
 	--else--
 else
 	io.write("Please type a vaild command\n")

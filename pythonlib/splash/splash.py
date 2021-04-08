@@ -5,11 +5,11 @@ import time
 BAR_MAX = 1000
 
 # layout the Window
-layout = [[sg.Text('A custom progress meter')],
+layout = [[sg.Text('Starting Polar')],
           [sg.ProgressBar(BAR_MAX, orientation='h', size=(20,20), key='-PROG-')]]
 
 # create the Window
-window = sg.Window('Custom Progress Meter', layout)
+window = sg.Window('Starting', layout)
 # loop that would normally do something useful
 for i in range(1000):
     # check to see if the cancel button was clicked and exit loop if clicked

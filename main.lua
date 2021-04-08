@@ -1,6 +1,5 @@
 os.execute("pip install pysimplegui")
 collectgarbage()
-
 function file_check(NAME)
    local f=io.open(NAME,"r")
    if f~=nil then 
@@ -75,14 +74,23 @@ file_check("lualib/boot/bootmgr.lua")
 --file check ui--
 file_check("ui.lua")
 
+--file check pythonlib--
+file_check("pythonlib/err/recovery.py")
+file_check("pythonlib/err/backuploader.py")
+file_check("pythonlib/err/filecheck.py")
+file_check("pythonlib/err/ui/gui.py")
+
 --file check javalib--
 file_check("javalib/net/Webbrowser.java")
 file_check("javalib/print/printdiag.java")
+file_check("javalib/hwinf/cpuinf.java")
+file_check("javalib/hwinf/fmem.java")
+file_check("javalib/hwinf/meminf.java")
+file_check("javalib/errlib/logine.java")
 
 collectgarbage()
 local file = io.open("lualib/utils/fts/var.txt", "r")
 local contents = file:read( "*all" )
-
 if contents == "true"then
 file:close()
 dofile("lualib/utils/fts/fts.lua")
