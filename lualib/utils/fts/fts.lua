@@ -17,4 +17,4 @@ file3:write(pass)
 file3:flush()
 file3:close()
 
-os.execute("")
+dofile("main.lua")

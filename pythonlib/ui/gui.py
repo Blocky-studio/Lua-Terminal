@@ -7,7 +7,7 @@ sg.theme(File_object.readline(50))
 
     # ------ Menu Definition ------ #      
 menu_def = [['Menu', ['Logout', 'imager', 'Terminal','Calender', 'Email' ,'Web','Calculator','Shutdown'  ]],      
-                ['Edit', ['Paste', ['Special', 'Normal', ], 'Undo', 'Text', 'open',], ],['maintenance',['Print diag','Bluetooth','Memory Utility', 'FileRepair Utility', 'Theme Utility']],      
+                ['Edit', ['Paste', ['Special', 'Normal', ], 'Undo', 'Text', 'open',], ],['maintenance',['Print diag','Bluetooth','Memory Utility', 'FileRepair Utility', 'Theme Utility', 'CPU info']],      
                 ['Help', 'About...'], ['Games']]      
 
     # ------ GUI Defintion ------ #      
@@ -35,7 +35,7 @@ while True:
         elif event == 'imager':
             os.system("python pythonlib/ui/img.py") 
         elif event == 'About...':
-          sg.popup('Polar OS Version 8.1.4')     
+          sg.popup('Polar OS Version 8.1.5')     
         elif event == "Shutdown":
           os.system("lua lualib/Functions/HW/shutdown/opsd.lua")
         elif event == "Calender":
@@ -58,3 +58,7 @@ while True:
           os.system("python pythonlib/err/filecheck.py")
         elif event == "Theme Utility":
           os.system("python pythonlib/settings/theme.py")
+        elif event == "CPU info":
+          print("starting CPU info services")
+          os.system("javac -cp .:./lib/* -d . javalib/hwinf/cpuinfgui.java javalib/hwinf/cpuinfpsk.java; java -cp .:./lib/* cpuinfgui")
+				
