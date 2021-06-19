@@ -540,6 +540,10 @@ elseif cmd == "fScHeCk"then
 	--format--
 elseif cmd == "format"then
 	dofile("lualib/Functions/FS/fdisk/fdisk.lua")
+elseif cmd == "Format"then
+  dofile("lualib/Functions/FS/fdisk/fdisk.lua")
+elseif cmd == "fOrmat"then
+  dofile("lualib/Functions/FS/fdisk/fdisk.lua")
 
 	--install--
 elseif cmd == "install"then

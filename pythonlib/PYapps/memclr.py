@@ -15,6 +15,7 @@ while True:
     if event in (sg.WIN_CLOSED, 'Exit'):
         break
     elif event == 'Clear Memory':
+        window.close()
         sg.popup("Memory cleared!")
         os.system("lua lualib/Functions/HW/memclr/memclrgui.lua")
 window.close()

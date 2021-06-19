@@ -1,3 +1,4 @@
+loadfile("main.lua")
 io.write("enter the file name of the lua file to excute\n")
 EXE = io.read()
 
@@ -7,5 +8,5 @@ else
 io.write("Excuting ")
 io.write(EXE)
 io.write("\n")
-pcall(EXE)
+xpcall(EXE, ERRORhandelersetapps)
 end

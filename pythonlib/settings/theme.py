@@ -14,7 +14,6 @@ while True:  # Event Loop
        os.system("python pythonlib/ui/gui.py")
     sg.theme(values['-LIST-'][0])
     sg.popup_get_text('This is {}'.format(values['-LIST-'][0]))
-    File_object = open("pythonlib/settings/cfg.txt","w")
+    File_object = open("slib32/culib/cfg.txt","w")
     File_object.write(values['-LIST-'][0])
-
-window.close()
+    os.system("python pythonlib/ui/gui.py")

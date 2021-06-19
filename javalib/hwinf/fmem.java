@@ -1,11 +1,7 @@
 import java.lang.Runtime;
-import javax.swing.JFrame;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
 import java.io.PrintWriter;
 
-public class fmem extends JFrame {
+public class fmem {
   
   public fmem() {
     long fmem = Runtime.getRuntime().freeMemory();

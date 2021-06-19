@@ -1,5 +1,4 @@
 opt = io.read()
-
 file = io.open(opt, "w")
 io.write("Type: ")
 txt = io.read()

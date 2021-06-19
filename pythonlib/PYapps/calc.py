@@ -10,16 +10,14 @@
 import PySimpleGUI as sg 
 
 ##-----DEFAULT SETTINGS----------------------------------##
-bw: dict = {'size':(7,2), 'font':('Franklin Gothic Book', 24), 'button_color':("black","#F8F8F8")}
-bt: dict = {'size':(7,2), 'font':('Franklin Gothic Book', 24), 'button_color':("black","#F1EABC")}
-bo: dict = {'size':(15,2), 'font':('Franklin Gothic Book', 24), 'button_color':("black","#ECA527"), 'focus':True}
+bw: dict = {'size':(7,1), 'font':('Franklin Gothic Book', 10), 'button_color':("black","#F8F8F8")}
+bt: dict = {'size':(7,1), 'font':('Franklin Gothic Book', 10), 'button_color':("black","#F1EABC")}
+bo: dict = {'size':(7,1), 'font':('Franklin Gothic Book', 10), 'button_color':("black","#ECA527"), 'focus':True}
 
 ##-----WINDOW AND LAYOUT---------------------------------##
 layout: list = [
-    [sg.Text('PyDataMath-II', size=(50,1), justification='right', background_color="#272533", 
-        text_color='white', font=('Franklin Gothic Book', 14, 'bold'))],
-    [sg.Text('0.0000', size=(18,1), justification='right', background_color='black', text_color='red', 
-        font=('Digital-7',48), relief='sunken', key="_DISPLAY_")],
+    [sg.Text('0.0000', size=(10,1), justification='right', background_color='black', text_color='red', 
+        font=('Digital-7',40), relief='sunken', key="_DISPLAY_")],
     [sg.Button('C',**bt), sg.Button('CE',**bt), sg.Button('%',**bt), sg.Button("/",**bt)],
     [sg.Button('7',**bw), sg.Button('8',**bw), sg.Button('9',**bw), sg.Button("*",**bt)],
     [sg.Button('4',**bw), sg.Button('5',**bw), sg.Button('6',**bw), sg.Button("-",**bt)],
@@ -27,7 +25,7 @@ layout: list = [
     [sg.Button('0',**bw), sg.Button('.',**bw), sg.Button('=',**bo, bind_return_key=True)]
 ]
 
-window: object = sg.Window('PyDataMath-II', layout=layout, background_color="#272533", size=(580, 660), return_keyboard_events=True)
+window: object = sg.Window('Calculator', layout=layout, background_color="#272533", size=(420, 480), return_keyboard_events=True)
 
 
 ##----CALCULATOR FUNCTIONS-------------------------------##

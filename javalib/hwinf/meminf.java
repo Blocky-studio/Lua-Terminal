@@ -1,11 +1,7 @@
 import java.lang.Runtime;
-import javax.swing.JFrame;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
 import java.io.PrintWriter;
 
-public class meminf extends JFrame {
+public class meminf {
   
   public meminf() {
     long mem = Runtime.getRuntime().totalMemory();

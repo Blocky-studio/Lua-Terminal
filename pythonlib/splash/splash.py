@@ -5,7 +5,7 @@ import time
 BAR_MAX = 1000
 
 # layout the Window
-layout = [[sg.Text('Starting Polar')],
+layout = [[sg.Text('Starting IceGUI')],
           [sg.ProgressBar(BAR_MAX, orientation='h', size=(20,20), key='-PROG-')]]
 
 # create the Window
@@ -21,4 +21,3 @@ for i in range(1000):
     
 window.close()
 os.system("python pythonlib/splash/login.py")
-

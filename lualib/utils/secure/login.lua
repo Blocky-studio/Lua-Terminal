@@ -1,6 +1,6 @@
-local file = io.open("lualib/utils/secure/users.txt", "r")
+local file = io.open("slib32/secure/users.txt", "r")
 local user = file:read( "*all" )
-local file2 = io.open("lualib/utils/secure/pass.txt", "r")
+local file2 = io.open("slib32/secure/pass.txt", "r")
 local PASSWD = file2:read( "*all" )
 
 SUDO = false
@@ -27,7 +27,7 @@ io.write("password:")
 pass = io.read()
 if pass == PASSWD then
 io.write("Welcome back!\n")
-os.execute("python pythonlib/ui/gui.py")
+os.execute("python pythonlib/splash/splash.py")
 else
 io.write("password is incorrect\n")
 dofile("lualib/utils/secure/login.lua")
@@ -41,5 +41,5 @@ dofile("lualib/utils/secure/login.lua")
 end
 else
 SUDO = false 
-os.execute("python pythonlib/ui/gui.py")
+os.execute("python pythonlib/splash/splash.py")
 end
