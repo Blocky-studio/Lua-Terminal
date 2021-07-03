@@ -1,9 +1,16 @@
 local UIDIR = "lualib/bootcheck/bootbackup/ui.lua"
 module("boot", package.seeall)
+local fcheck = require("fcheck")
+
+isinstallermedia = false
 
 function meh(FALLBACK, ERRMESSAGE)
    io.write(ERRMESSAGE.."\n")
    os.execute(FALLBACK)
+end
+
+function ssysinit()
+	 dofile("ssystem/love2d/lexe.lua")
 end
 
 function init()
@@ -119,6 +126,8 @@ function initcoroutine()
    bootbui = coroutine.create(bootbackupui)
    uibackup = coroutine.create(uibackup)
    checkdep = coroutine.create(checkdepend)
+	 ssysin = coroutine.create(ssysinit)
+	 coroutine.resume(ssysin)
    coroutine.resume(bootbma)
    coroutine.resume(bootbui)
    coroutine.resume(uibackup)
@@ -132,6 +141,9 @@ function FATALerrorhandeler()
 end
 
 function initmgr()
+	 os.execute("chmod +rwx slib32")
+	 os.execute("sudo chmod +rmx slib32")
+   fcheck.main()
    initcoroutine()
    file_check_main()
    ui_file_check()
@@ -144,10 +156,19 @@ function initmgr()
    io.write("Checking boot --- Done!\n")
    io.write("Checking bootcheck --- Done!\n")
    io.write("Activating UI work arounds --- Done!\n")
-   boot.init()
+   os.execute("startx")
+   init()
+end
+
+function isinstallerm()
+	if isinstallermedia == true then
+		dofile("lualib/installer/installer.lua")
+	end
 end
 
 os.capture("uname")
 os.capture("uname -r")
+
+isinstallerm()
 
 initmgr()

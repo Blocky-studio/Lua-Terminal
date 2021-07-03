@@ -1,11 +1,16 @@
+module("fcheck", package.seeall)
+
+
 function file_check(NAME)
    local f=io.open(NAME,"r")
    if f~=nil then 
     io.close(f) return true
    else 
-    return error("The following files are missing"..Name)
+    return error("The following files are missing"..NAME)
    end
 end
+
+function main()
 
 --file check lualib--
 file_check("lualib/Functions/calc/add.lua")
@@ -88,5 +93,7 @@ file_check("javalib/hwinf/meminf.class")
 file_check("javalib/hwinf/hwinfgui.java")
 file_check("javalib/errlib/logine.java")
 file_check("javalib/errlib/logine.class")
+
+end
 
 dofile("lualib/boot/bootmgr.lua")

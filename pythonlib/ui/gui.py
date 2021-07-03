@@ -2,13 +2,16 @@ from PIL import Image
 import PySimpleGUI as sg   
 import os
 import subprocess
+import time
+import 
 
-
+os.system("chmod +rwx slib32")
+os.system("sudo chmod +rwx slib32")
 File_object = open("slib32/culib/cfg.txt","r")
 sg.theme(File_object.readline(50))
 
     # ------ Menu Definition ------ #      
-menu_def = [['Menu', ['Logout', 'imager', 'Terminal','Calender', 'Email' ,'Web','Calculator','Shutdown'  ]],      
+menu_def = [['Home', ['Logout', 'imager', 'Terminal','Calender', 'Email' ,'Web','Calculator','Shutdown'  ]],      
                 ['Edit', ['Paste', ['Special', 'Normal', ], 'Undo', 'Text', 'open',], ],['maintenance',['Print diag','Bluetooth','Memory Utility', 'FileRepair Utility', 'Theme Utility', 'CPU info']],      
                 ['Help', 'About...'], ['Games']]      
 

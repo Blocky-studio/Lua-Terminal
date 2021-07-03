@@ -1,0 +1,20 @@
+io.write("what directory do you want to install IceOS\n")
+
+tdir = io.read()
+
+os.execute("cp main.lua"..tdir)
+os.execute("cp javalib*" ..tdir)
+os.execute("cp lib*" ..tdir)
+os.execute("cp lualib*" ..tdir)
+os.execute("cp pythonlib*" ..tdir)
+os.execute("cp RECOV*" ..tdir)
+os.execute("cp slib32*" ..tdir)
+os.execute("cp ssystem*" ..tdir)
+os.execute("cp terminal*" ..tdir)
+os.execute("cp ui.lua" ..tdir)
+os.execute("cp cpuinfgui.class" ..tdir)
+os.execute("cp hwinfgui.class" ..tdir)
+os.execute("cp .bashrc" ..tdir)
+os.execute("cp .start.sh" ..tdir)
+
+io.write("Completed install")

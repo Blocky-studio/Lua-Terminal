@@ -2,6 +2,8 @@ import PySimpleGUI as sg
 import os
 import auth
 
+
+loggedin = None
 pass_object = open("slib32/secure/pass.txt", "r")
 user_object = open("slib32/secure/users.txt", "r")
 
@@ -17,6 +19,7 @@ window = sg.Window('Login', layout)
 while True:
   event, values = window.read()
   if event == sg.WIN_CLOSED or event == 'Cancel':
+    loggedin = False
     window.close()
     os.system("python pythonlib/ui/sopts.py")
   elif event == 'Submit':

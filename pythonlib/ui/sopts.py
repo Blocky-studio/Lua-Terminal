@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
 import os
+import sys
 
 layout = [[sg.Text("Choose a Option")],
 					[sg.Button('Shutdown')],
@@ -16,6 +17,8 @@ while True:
     os.system("python pythonlib/ui/gui.py")
   elif event == 'Shutdown':
     window.close()
+    os.system("chmod -rwx slib32")
+    os.system("sudo chmod -rmx slib32")
     os.system("shutdown -P now")
   elif event == 'Logout':
     window.close()
