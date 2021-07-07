@@ -1,6 +1,7 @@
 import PySimpleGUI as sg
 import os
 import sys
+import login
 
 layout = [[sg.Text("Choose a Option")],
 					[sg.Button('Shutdown')],
@@ -13,8 +14,11 @@ window = sg.Window('shutdown', layout)
 while True:
   event, values = window.read()
   if event == sg.WIN_CLOSED:
-    window.close()
-    os.system("python pythonlib/ui/gui.py")
+    if loggedin == False:
+      os.system("python pythonlib/splash/login.py")
+    else:
+      window.close()
+      os.system("python pythonlib/ui/gui.py")
   elif event == 'Shutdown':
     window.close()
     os.system("chmod -rwx slib32")

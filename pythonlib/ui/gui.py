@@ -3,7 +3,6 @@ import PySimpleGUI as sg
 import os
 import subprocess
 import time
-import 
 
 os.system("chmod +rwx slib32")
 os.system("sudo chmod +rwx slib32")
@@ -26,7 +25,7 @@ window.Maximize()
     # ------ Loop & Process button menu choices ------ #      
 while True:
         event, values = window.read()      
-        if event == sg.WIN_CLOSED or event == 'Logout':
+        if event == sg.WIN_CLOSED:
             window.close()
             os.system("python pythonlib/ui/gui.py")    
             break
@@ -45,7 +44,7 @@ while True:
           sg.popup('IceGUI Version 8.1.5')     
         elif event == "Shutdown":
           window.close()
-          os.system("python pythonlib/ui/sopts.py")
+          os.system("python pythonlib/splash/sopts.py")
         elif event == "Calender":
           os.system("python pythonlib/PYapps/Calendar.py")
         elif event == "Print diag":
@@ -70,4 +69,5 @@ while True:
         elif event == "CPU info":
           print("starting CPU info services")
           os.system("javac -cp .:./lib/* -d . javalib/hwinf/cpuinfgui.java javalib/hwinf/hwinfgui.java; java -cp .:./lib/* cpuinfgui")
-				
+        elif event == 'Logout':
+          os.system("python pythonlib/splash/login.py")
